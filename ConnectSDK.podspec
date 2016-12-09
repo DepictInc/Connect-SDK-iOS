@@ -101,6 +101,7 @@ Pod::Spec.new do |s|
     sp.requires_arc = false
     # disable all warnings from asi-http-request
     sp.compiler_flags = '-w'
+    sp.private_header_files = "core/Frameworks/asi-http-request/Classes/CTASIDataDecompressor.h", "core/Frameworks/asi-http-request/Classes/CTASIDataCompressor.h"
   end
 
   s.subspec 'GoogleCast' do |sp|
